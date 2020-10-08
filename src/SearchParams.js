@@ -30,7 +30,7 @@ const SearchParams = () => {
       const breedStrings = breeds.map(({ name }) => name);
       updateBreeds(breedStrings);
     }, console.error);
-  }, [animal]);
+  }, [animal, updateBreed, updateBreeds]);
 
   return (
     <div className="search-params">
